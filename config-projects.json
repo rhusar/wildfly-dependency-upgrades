@@ -1,0 +1,27 @@
+[
+  {
+    "name": "wildfly",
+    "scm": "https://github.com/wildfly/wildfly.git",
+    "branch": "main"
+  },
+  {
+    "name": "wildfly",
+    "scm": "https://github.com/wildfly/wildfly.git",
+    "branch": "41.x"
+  },
+  {
+    "name": "wildfly-core",
+    "scm": "https://github.com/wildfly/wildfly-core.git",
+    "branch": "main"
+  },
+  {
+    "name": "wildfly-clustering",
+    "scm": "https://github.com/wildfly-clustering/wildfly-clustering.git",
+    "branch": "main"
+  },
+  {
+    "name": "mod_cluster",
+    "scm": "https://github.com/modcluster/mod_cluster.git",
+    "branch": "main"
+  }
+]

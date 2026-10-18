@@ -1,0 +1,47 @@
+{#include layout}
+{#title}{report.project.name} ({report.branch}) dependency upgrades{/title}
+<p><a href="index.html">&larr; All reports</a></p>
+<h2>{report.project.name} ({report.branch}) Component Upgrade Report</h2>
+<p><a href="{report.project.webUrl}">{report.project.webUrl}</a> <a href="{report.project.webUrl}/tree/{report.branch}">{report.branch}</a> @<a href="{report.project.webUrl}/commit/{report.commit}"><code>{report.shortCommit}</code></a></p>
+<p>Following repositories were searched:</p>
+<ul class="repositories">
+{#for repository in report.repositories}
+  <li><span class="badge" style="background-color: {repository.color};">{repository.name}</span> {repository.url}</li>
+{/for}
+</ul>
+<table>
+  <caption>Possible Component Upgrades</caption>
+  <thead>
+    <tr><th>GAV</th><th>New Version</th><th>Repository</th></tr>
+  </thead>
+{#for component in report.components}
+  <tbody>
+    <tr{#if component.micro} class="micro"{/if}>
+      <td class="gav">{component.gav}</td>
+      {#if component.micro}
+      <td>{component.micro.version}</td>
+      <td><span class="badge" style="background-color: {component.micro.repository.color};">{component.micro.repository.name}</span></td>
+      {#else}
+      <td></td>
+      <td></td>
+      {/if}
+    </tr>
+    {#if component.minor}
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>{component.minor.version}</td>
+      <td><span class="badge" style="background-color: {component.minor.repository.color};">{component.minor.repository.name}</span></td>
+    </tr>
+    {/if}
+    {#if component.latest}
+    <tr>
+      <td class="gav sub">&#8627; Very latest</td>
+      <td>{component.latest.version}</td>
+      <td><span class="badge" style="background-color: {component.latest.repository.color};">{component.latest.repository.name}</span></td>
+    </tr>
+    {/if}
+  </tbody>
+{/for}
+  <tr><td colspan="3">{report.components.size} items</td></tr>
+</table>
+{/include}

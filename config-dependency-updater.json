@@ -1,0 +1,15 @@
+{
+  "repositories": {
+    "Central": "https://repo1.maven.org/maven2/",
+    "JBossReleases": "https://repository.jboss.org/nexus/content/repositories/releases/"
+  },
+  "rules": {
+    "*:*": {
+      "STREAM": "MICRO",
+      "IGNORE": [
+        "(?i)snapshot",
+        "(?i)[.-](alpha|beta|cr|rc|m|milestone|ea|preview|dev)[.-]?\\d*([.-]|$)"
+      ]
+    }
+  }
+}

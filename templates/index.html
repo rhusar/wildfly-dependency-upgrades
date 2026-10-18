@@ -1,0 +1,19 @@
+{#include layout}
+<h2>WildFly Dependency Upgrades</h2>
+<p>Possible dependency upgrades; only final releases are considered and micro, minor and major upgrades are listed for each component.</p>
+<table>
+  <thead>
+    <tr><th>Project</th><th>Branch</th><th>Commit</th><th>Components with upgrades</th></tr>
+  </thead>
+  <tbody>
+  {#for report in reports}
+    <tr>
+      <td><a href="{report.project.id}.html">{report.project.name}</a></td>
+      <td><a href="{report.project.webUrl}/tree/{report.branch}">{report.branch}</a></td>
+      <td><a href="{report.project.webUrl}/commit/{report.commit}"><code>{report.shortCommit}</code></a></td>
+      <td class="num">{report.components.size}</td>
+    </tr>
+  {/for}
+  </tbody>
+</table>
+{/include}
