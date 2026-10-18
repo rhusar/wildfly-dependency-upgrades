@@ -9,8 +9,8 @@
   {#for report in reports}
     <tr>
       <td><a href="{report.project.id}.html">{report.project.name}</a></td>
-      <td><a href="{report.project.webUrl}/tree/{report.branch}">{report.branch}</a></td>
-      <td><a href="{report.project.webUrl}/commit/{report.commit}"><code>{report.shortCommit}</code></a></td>
+      <td><a href="{report.project.webUrl}/tree/{report.branch}">{#include github-icon /} {report.branch}</a></td>
+      <td><a href="{report.project.webUrl}/commit/{report.commit}">{#include github-icon /} <code>{report.shortCommit}</code></a></td>
       <td class="num">{report.components.size}</td>
     </tr>
   {/for}

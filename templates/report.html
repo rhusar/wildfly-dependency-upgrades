@@ -2,7 +2,7 @@
 {#title}{report.project.name} ({report.branch}) dependency upgrades{/title}
 <p><a href="index.html">&larr; All reports</a></p>
 <h2>{report.project.name} ({report.branch}) Component Upgrade Report</h2>
-<p><a href="{report.project.webUrl}">{report.project.webUrl}</a> <a href="{report.project.webUrl}/tree/{report.branch}">{report.branch}</a> @<a href="{report.project.webUrl}/commit/{report.commit}"><code>{report.shortCommit}</code></a></p>
+<p><a href="{report.project.webUrl}">{report.project.webUrl}</a> <a href="{report.project.webUrl}/tree/{report.branch}">{#include github-icon /} {report.branch}</a> @<a href="{report.project.webUrl}/commit/{report.commit}">{#include github-icon /} <code>{report.shortCommit}</code></a></p>
 <p>Following repositories were searched:</p>
 <ul class="repositories">
 {#for repository in report.repositories}
