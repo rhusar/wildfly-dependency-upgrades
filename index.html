@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WildFly Dependency Upgrades</title>
+<style>
+  body { font-family: Verdana, sans-serif; font-size: 10pt; margin: 0 auto; padding: 16px; max-width: 1100px; background: #fff; color: #222; }
+  a { color: #0366d6; }
+  table { border-collapse: collapse; margin: 2em 0; }
+  caption { text-align: left; font-weight: bold; }
+  th, td { border-bottom: 1px solid #ddd; padding: 5px; text-align: left; }
+  td.gav { font-family: "Courier New", monospace; }
+  td.sub { padding-left: 2em; color: #999; }
+  td.num { text-align: right; }
+  tr.micro td { font-weight: bold; }
+  ul.repositories { list-style-type: circle; }
+  ul.repositories li { margin: 7px 0; }
+  .badge { border-radius: 5px; padding: 3px; }
+  .muted, .muted a { color: #999; }
+</style>
+</head>
+<body>
+<h2>WildFly Dependency Upgrades</h2>
+<p>Possible dependency upgrades; only final releases are considered and micro, minor and major upgrades are listed for each component.</p>
+<table>
+  <thead>
+    <tr><th>Project</th><th>Branch</th><th>Commit</th><th>Components with upgrades</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="wildfly-main.html">wildfly</a></td>
+      <td><a href="https://github.com/wildfly/wildfly/tree/main">main</a></td>
+      <td><a href="https://github.com/wildfly/wildfly/commit/6e812e37f2da5abb48658ccc84477086f1351b87"><code>6e812e37f2da</code></a></td>
+      <td class="num">131</td>
+    </tr>
+    <tr>
+      <td><a href="wildfly-41.x.html">wildfly</a></td>
+      <td><a href="https://github.com/wildfly/wildfly/tree/41.x">41.x</a></td>
+      <td><a href="https://github.com/wildfly/wildfly/commit/1645f234cefa7f339f0b5a090ede9f9cee9ded39"><code>1645f234cefa</code></a></td>
+      <td class="num">165</td>
+    </tr>
+    <tr>
+      <td><a href="wildfly-core-main.html">wildfly-core</a></td>
+      <td><a href="https://github.com/wildfly/wildfly-core/tree/main">main</a></td>
+      <td><a href="https://github.com/wildfly/wildfly-core/commit/8245c668635cc0f3f15c2e8e29a64b28505be135"><code>8245c668635c</code></a></td>
+      <td class="num">39</td>
+    </tr>
+  </tbody>
+</table>
+<p class="muted">Generated 2026-10-18 06:50 UTC by <a href="https://github.com/jboss-set/maven-dependency-updater">Maven Dependency Updater</a>.</p>
+</body>
+</html>

@@ -1,0 +1,1580 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>wildfly (main) dependency upgrades</title>
+<style>
+  body { font-family: Verdana, sans-serif; font-size: 10pt; margin: 0 auto; padding: 16px; max-width: 1100px; background: #fff; color: #222; }
+  a { color: #0366d6; }
+  table { border-collapse: collapse; margin: 2em 0; }
+  caption { text-align: left; font-weight: bold; }
+  th, td { border-bottom: 1px solid #ddd; padding: 5px; text-align: left; }
+  td.gav { font-family: "Courier New", monospace; }
+  td.sub { padding-left: 2em; color: #999; }
+  td.num { text-align: right; }
+  tr.micro td { font-weight: bold; }
+  ul.repositories { list-style-type: circle; }
+  ul.repositories li { margin: 7px 0; }
+  .badge { border-radius: 5px; padding: 3px; }
+  .muted, .muted a { color: #999; }
+</style>
+</head>
+<body>
+
+<p><a href="index.html">&larr; All reports</a></p>
+<h2>wildfly (main) Component Upgrade Report</h2>
+<p><a href="https://github.com/wildfly/wildfly">https://github.com/wildfly/wildfly</a> <a href="https://github.com/wildfly/wildfly/tree/main">main</a> @<a href="https://github.com/wildfly/wildfly/commit/6e812e37f2da5abb48658ccc84477086f1351b87"><code>6e812e37f2da</code></a></p>
+<p>Following repositories were searched:</p>
+<ul class="repositories">
+  <li><span class="badge" style="background-color: #a8df65;">Central</span> https://repo1.maven.org/maven2/</li>
+  <li><span class="badge" style="background-color: #edf492;">JBossReleases</span> https://repository.jboss.org/nexus/content/repositories/releases/</li>
+</ul>
+<table>
+  <caption>Possible Component Upgrades</caption>
+  <thead>
+    <tr><th>GAV</th><th>New Version</th><th>Repository</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="gav">at.yawk.lz4:lz4-java:1.11.4</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>1.12.0</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">com.beust:jcommander:1.78</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>1.82</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">com.carrotsearch:hppc:0.10.0</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>0.12.0</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr class="micro">
+      <td class="gav">com.fasterxml.jackson:jackson-bom:2.21.7</td>
+      <td>2.21.8</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>2.22.4</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">com.fasterxml.woodstox:woodstox-core:7.0.0</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>7.3.0</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">com.fasterxml:classmate:1.5.1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>1.8.0</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr class="micro">
+      <td class="gav">com.fasterxml:classmate:1.7.1</td>
+      <td>1.7.3</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>1.8.0</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">com.github.ben-manes.caffeine:caffeine:3.2.4</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>3.3.1</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">com.google.api.grpc:proto-google-common-protos:2.0.1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>2.78.0</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">com.google.guava:guava:33.0.0-jre</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>33.7.2-jre</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">com.google.protobuf:protobuf-java-util:4.28.3</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>4.36.2</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">com.h2database:h2:2.2.224</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>2.5.252</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">com.h2database:h2:2.4.240</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>2.5.252</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">com.nimbusds:nimbus-jose-jwt:10.3.1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>10.10</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">com.sun.istack:istack-commons-runtime:4.1.2</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>4.2.0</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr class="micro">
+      <td class="gav">com.sun.xml.bind.external:relaxng-datatype:4.0.8</td>
+      <td>4.0.9</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">commons-codec:commons-codec:1.17.2</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>1.23.0</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">commons-collections:commons-collections:3.2.2</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Very latest</td>
+      <td>20040616</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">io.agroal:agroal-api:2.0</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>2.8.2</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Very latest</td>
+      <td>3.2.1</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">io.github.resilience4j:resilience4j-core:2.3.0</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>2.4.0</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">io.grpc:grpc-api:1.70.0</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>1.85.0</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr class="micro">
+      <td class="gav">io.netty:netty-all:4.0.19.Final</td>
+      <td>4.0.56.Final</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>4.2.19.Final</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">io.netty:netty-bom:4.1.139.Final</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>4.2.19.Final</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">io.opentelemetry.instrumentation:opentelemetry-instrumentation-annotations:2.14.0</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>2.32.0</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">io.opentelemetry.semconv:opentelemetry-semconv:1.32.0</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>1.44.0</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">io.opentelemetry:opentelemetry-api:1.48.0</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>1.67.0</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">io.prometheus:prometheus-metrics-config:1.7.0</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>1.10.0</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">io.rest-assured:rest-assured:5.5.7</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Very latest</td>
+      <td>6.2.0</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">io.smallrye.opentelemetry:smallrye-opentelemetry-api:2.11.2</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>2.15.1</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">io.smallrye.reactive:mutiny-reactive-streams-operators:3.1.1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>3.3.0</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">io.smallrye.reactive:mutiny-zero-flow-adapters:1.1.1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>1.3.1</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">io.smallrye.reactive:smallrye-mutiny-vertx-amqp-client:3.23.1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Very latest</td>
+      <td>4.0.2</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">io.smallrye.reactive:smallrye-reactive-converter-api:2.6.0</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>2.7.0</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Very latest</td>
+      <td>3.0.3</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr class="micro">
+      <td class="gav">io.smallrye.reactive:smallrye-reactive-messaging-amqp:4.37.0</td>
+      <td>4.37.1</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">io.smallrye.stork:stork-api:2.7.11</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Very latest</td>
+      <td>3.0.3</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">io.smallrye:smallrye-fault-tolerance-api:6.11.4</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Very latest</td>
+      <td>7.0.0</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">io.smallrye:smallrye-jwt-cdi-extension:4.3.1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>4.6.4</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">io.undertow.ee:undertow-servlet:1.0.3.Final</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Very latest</td>
+      <td>2.0.3.Final</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">io.undertow.jastow:jastow:2.2.10.Final</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>2.3.1.Final</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">io.vertx:vertx-amqp-client:4.5.35</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Very latest</td>
+      <td>5.2.1</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">jakarta.annotation:jakarta.annotation-api:2.1.1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Very latest</td>
+      <td>3.0.0</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">jakarta.authentication:jakarta.authentication-api:3.0.0</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>3.1.0</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">jakarta.authorization:jakarta.authorization-api:2.1.0</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Very latest</td>
+      <td>3.0.0</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">jakarta.enterprise.concurrent:jakarta.enterprise.concurrent-api:3.0.4</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>3.1.1</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">jakarta.enterprise:jakarta.enterprise.cdi-api:2.0.2</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Very latest</td>
+      <td>5.0.0</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">jakarta.enterprise:jakarta.enterprise.cdi-api:4.0.1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>4.1.0</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Very latest</td>
+      <td>5.0.0</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">jakarta.enterprise:jakarta.enterprise.cdi-api:4.1.0</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Very latest</td>
+      <td>5.0.0</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">jakarta.faces:jakarta.faces-api:4.0.1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>4.1.2</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">jakarta.inject:jakarta.inject-api:1.0.5</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Very latest</td>
+      <td>2.0.1.MR</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr class="micro">
+      <td class="gav">jakarta.inject:jakarta.inject-api:2.0.1</td>
+      <td>2.0.1.MR</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">jakarta.interceptor:jakarta.interceptor-api:2.1.0</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>2.2.0</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr class="micro">
+      <td class="gav">jakarta.json.bind:jakarta.json.bind-api:3.0.3</td>
+      <td>3.0.4</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr class="micro">
+      <td class="gav">jakarta.mail:jakarta.mail-api:2.1.3</td>
+      <td>2.1.5</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">jakarta.mvc:jakarta.mvc-api:2.1.0</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Very latest</td>
+      <td>3.0.1</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">jakarta.mvc:jakarta.mvc-api:2.1.0</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Very latest</td>
+      <td>3.0.1</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">jakarta.persistence:jakarta.persistence-api:3.1.0</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>3.2.0</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">jakarta.security.enterprise:jakarta.security.enterprise-api:3.0.0</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Very latest</td>
+      <td>4.0.0</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">jakarta.servlet.jsp:jakarta.servlet.jsp-api:3.1.1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Very latest</td>
+      <td>4.0.0</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">jakarta.servlet:jakarta.servlet-api:6.0.0</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>6.1.0</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">jakarta.validation:jakarta.validation-api:3.0.2</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>3.1.1</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">jakarta.websocket:jakarta.websocket-api:2.1.1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>2.2.0</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">jakarta.ws.rs:jakarta.ws.rs-api:3.1.0</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Very latest</td>
+      <td>4.0.0</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">joda-time:joda-time:2.12.7</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>2.15.0</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">net.bytebuddy:byte-buddy:1.17.8</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>1.18.15-jdk5</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr class="micro">
+      <td class="gav">net.bytebuddy:byte-buddy:1.18.14</td>
+      <td>1.18.15-jdk5</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr class="micro">
+      <td class="gav">org.apache.avro:avro:1.12.1</td>
+      <td>1.12.2</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">org.apache.commons:commons-secure-xml:1.0.0</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>1.1.0</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">org.apache.cxf.services.sts:cxf-services-sts-core:4.1.9</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>4.2.4</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">org.apache.cxf.xjc-utils:cxf-xjc-runtime:4.1.3</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>4.2.0</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr class="micro">
+      <td class="gav">org.apache.directory.server:apacheds-interceptor-kerberos:2.0.0.AM26</td>
+      <td>2.0.0.AM27</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">org.apache.groovy:groovy:4.0.33</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Very latest</td>
+      <td>6.0.0</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">org.apache.kafka:kafka-clients:4.2.2</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>4.4.0</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">org.apache.kerby:kerb-server-api-all:2.0.3</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>2.1.2</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">org.apache.lucene:lucene-analysis-common:9.11.1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>9.12.3</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Very latest</td>
+      <td>10.5.2</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">org.apache.lucene:lucene-analysis-common:9.12.3</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Very latest</td>
+      <td>10.5.2</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">org.awaitility:awaitility:4.0.3</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>4.3.0</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">org.codehaus.plexus:plexus-utils:3.5.1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>3.6.2</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Very latest</td>
+      <td>4.1.0</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">org.codehaus.woodstox:stax2-api:4.2.2</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>4.3.2</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">org.cryptacular:cryptacular:1.2.7</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>1.3.0</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">org.dom4j:dom4j:2.1.5</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>2.2.0</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr class="micro">
+      <td class="gav">org.eclipse.angus:angus-mail:2.0.4</td>
+      <td>2.0.5</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">org.eclipse.jdt:ecj:3.33.0</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>3.46.100</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr class="micro">
+      <td class="gav">org.eclipse.jetty:jetty-http:11.0.25</td>
+      <td>11.0.26</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Very latest</td>
+      <td>12.1.14</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">org.eclipse.krazo:krazo-core:3.0.1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Very latest</td>
+      <td>4.0.2</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr class="micro">
+      <td class="gav">org.eclipse.microprofile.health:microprofile-health-api:4.0.1</td>
+      <td>4.0.2</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">org.eclipse.microprofile.jwt:microprofile-jwt-auth-api:2.1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>2.2</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">org.eclipse.persistence:eclipselink:4.0.9</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Very latest</td>
+      <td>5.0.2</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr class="micro">
+      <td class="gav">org.elasticsearch.client:elasticsearch-rest-client-sniffer:8.15.4</td>
+      <td>8.15.5</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>8.19.23</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Very latest</td>
+      <td>9.5.5</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr class="micro">
+      <td class="gav">org.elasticsearch.client:elasticsearch-rest-client-sniffer:9.3.1</td>
+      <td>9.3.8</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>9.5.5</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">org.glassfish.expressly:expressly:5.0.0</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Very latest</td>
+      <td>6.0.0</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr class="micro">
+      <td class="gav">org.glassfish.soteria:jakarta.security.enterprise:3.0.3</td>
+      <td>3.0.4</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr class="micro">
+      <td class="gav">org.glassfish:jakarta.faces:4.0.22</td>
+      <td>4.0.27</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>4.1.18</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr class="micro">
+      <td class="gav">org.glassfish:jakarta.faces:4.1.13</td>
+      <td>4.1.18</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">org.hamcrest:hamcrest:2.2</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Very latest</td>
+      <td>3.0</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">org.hibernate.models:hibernate-models-jandex:1.1.2</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>1.3.4</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr class="micro">
+      <td class="gav">org.hibernate.orm:hibernate-core:6.6.54.Final</td>
+      <td>6.6.59.Final</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Very latest</td>
+      <td>7.4.13.Final</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr class="micro">
+      <td class="gav">org.hibernate.search:hibernate-search-backend-elasticsearch:7.2.5.Final</td>
+      <td>7.2.6.Final</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Very latest</td>
+      <td>8.4.0.Final</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr class="micro">
+      <td class="gav">org.hibernate.validator:hibernate-validator-cdi:8.0.4.Final</td>
+      <td>8.0.6.Final</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Very latest</td>
+      <td>9.1.5.Final</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr class="micro">
+      <td class="gav">org.hibernate.validator:hibernate-validator-cdi:9.1.1.Final</td>
+      <td>9.1.5.Final</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">org.htmlunit:htmlunit:4.21.0</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Very latest</td>
+      <td>5.6.0</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">org.infinispan:infinispan-bom:16.2.3</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>16.3.0</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">org.javassist:javassist:3.29.2-GA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>3.33.0-GA</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">org.jboss.ejb3:jboss-ejb3-ext-api:2.4.0.Final</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>2.5.0.Final</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr class="micro">
+      <td class="gav">org.jboss.ironjacamar:ironjacamar-common-api:3.0.22.Final</td>
+      <td>3.0.23.Final</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>3.1.0.Final</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">org.jboss.narayana.lra:lra-client:1.2.0.Final</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Very latest</td>
+      <td>2.0.1.Final</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr class="micro">
+      <td class="gav">org.jboss.resteasy:resteasy-atom-provider:6.2.16.Final</td>
+      <td>6.2.19.Final</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Very latest</td>
+      <td>7.0.5.Final</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-depchain:2.2.7</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Very latest</td>
+      <td>3.3.7</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">org.jboss.shrinkwrap:shrinkwrap-bom:1.2.6</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Very latest</td>
+      <td>2.0.0.Final</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">org.jboss.weld.module:weld-ejb:5.1.7.Final</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Very latest</td>
+      <td>7.0.0.Final</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">org.jboss.weld.module:weld-ejb:6.0.4.Final</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Very latest</td>
+      <td>7.0.0.Final</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">org.jboss.weld.se:weld-se-core:6.0.4.Final</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Very latest</td>
+      <td>7.0.0.Final</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">org.jboss.weld:weld-api:5.0.SP3</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Very latest</td>
+      <td>7.0.Final</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">org.jboss.weld:weld-api:6.0.Final</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Very latest</td>
+      <td>7.0.Final</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">org.jboss:jboss-transaction-spi:8.0.0.Final</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Very latest</td>
+      <td>9.0.0.Final</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">org.jgroups.azure:jgroups-azure:2.0.2.Final</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Very latest</td>
+      <td>3.0.0.Final</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr class="micro">
+      <td class="gav">org.jgroups:jgroups:5.5.7.Final</td>
+      <td>5.5.8.Final</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">org.keycloak:keycloak-core:26.7.5</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>26.8.1</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">org.keycloak:keycloak-saml-wildfly-subsystem:18.0.2</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Very latest</td>
+      <td>26.8.1</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">org.mock-server:mockserver-netty:5.6.1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>5.15.0</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Very latest</td>
+      <td>9.0.0</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">org.mock-server:mockserver:5.6.1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>5.15.0</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Very latest</td>
+      <td>9.0.0</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr class="micro">
+      <td class="gav">org.ow2.asm:asm-util:9.11</td>
+      <td>9.11.1</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">org.testng:testng:7.10.2</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>7.12.0</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">org.testng:testng:7.8.0</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>7.12.0</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr class="micro">
+      <td class="gav">org.wildfly.clustering:wildfly-clustering-bom:12.0.0.CR5</td>
+      <td>12.0.1.Final</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">org.wildfly.extras.creaper:creaper-commands:2.0.3</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Very latest</td>
+      <td>3.0.0</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">org.wildfly.glow:wildfly-glow-core:2.1.0.Final</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>2.2.0.Final</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">org.wildfly.security.jakarta:jakarta-authentication:3.2.1.Final</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Very latest</td>
+      <td>4.0.0.Final</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">org.wildfly.security:wildfly-elytron-tests-common:2.4.2.Final</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>2.9.4.Final</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">org.wildfly:wildfly-naming-client:1.0.17.Final</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>1.1.0.Final</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Very latest</td>
+      <td>2.0.1.Final</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td class="gav">org.wiremock:wiremock:3.10.0</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>3.13.2</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr class="micro">
+      <td class="gav">software.amazon.awssdk:annotations:2.55.14</td>
+      <td>2.55.16</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+    <tr>
+      <td class="gav sub">&#8627; Minor upgrade</td>
+      <td>2.56.0</td>
+      <td><span class="badge" style="background-color: #a8df65;">Central</span></td>
+    </tr>
+  </tbody>
+  <tr><td colspan="3">131 items</td></tr>
+</table>
+<p class="muted">Generated 2026-10-18 06:50 UTC by <a href="https://github.com/jboss-set/maven-dependency-updater">Maven Dependency Updater</a>.</p>
+</body>
+</html>
+
