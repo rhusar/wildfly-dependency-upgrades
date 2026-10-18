@@ -4,6 +4,9 @@
 //DEPS org.jboss.set.dependency-alignment:core:1.0.5
 //DEPS io.quarkus.qute:qute-core:3.40.1
 //DEPS com.fasterxml.jackson.core:jackson-databind:2.12.7.1
+// Override maven-model 3.5.4 used by the updater, which cannot parse child.project.url.inherit.append.path (e.g. in wildfly-clustering)
+// https://github.com/jboss-set/maven-dependency-updater/issues/20
+//DEPS org.apache.maven:maven-model:3.6.3
 //FILES logback.xml
 
 import com.fasterxml.jackson.core.type.TypeReference;
