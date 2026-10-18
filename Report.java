@@ -20,6 +20,9 @@ import org.jboss.set.mavendependencyupdater.ArtifactResult;
 import org.jboss.set.mavendependencyupdater.ComponentUpgrade;
 import org.jboss.set.mavendependencyupdater.DefaultAvailableVersionsResolver;
 import org.jboss.set.mavendependencyupdater.DependencyEvaluator;
+import org.jboss.set.mavendependencyupdater.LocatedDependency;
+import org.jboss.set.mavendependencyupdater.LocatedProperty;
+import org.jboss.set.mavendependencyupdater.PomDependencyUpdater;
 import org.jboss.set.mavendependencyupdater.configuration.Configuration;
 import org.jboss.set.mavendependencyupdater.core.aggregation.ComponentUpgradeAggregator;
 import org.jboss.set.mavendependencyupdater.projectparser.PmeDependencyCollector;
@@ -33,9 +36,11 @@ import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
+import java.util.Set;
 
 /**
  * Generates dependency upgrade reports for the projects listed in config-projects.json into target/site.
@@ -141,7 +146,7 @@ public class Report {
                 .sorted(Comparator.comparing(upgrade -> upgrade.getArtifactRef().toString()))
                 .toList();
 
-        List<Component> components = ComponentUpgradeAggregator.aggregateComponentUpgrades(pom, upgrades).stream()
+        List<Component> components = aggregate(pom, upgrades).stream()
                 .map(upgrade -> new Component(upgrade.getArtifactRef().getGroupId() + ":" + upgrade.getArtifactRef().getArtifactId() + ":" + upgrade.getArtifactRef().getVersionString(),
                         toUpgrade(upgrade.getLatestConfigured(), repositories),
                         toUpgrade(upgrade.getLatestMinor(), repositories),
@@ -149,6 +154,30 @@ public class Report {
                 .toList();
 
         return new ProjectReport(project, branch, commit, repositories, components);
+    }
+
+    /**
+     * Same as {@link ComponentUpgradeAggregator#aggregateComponentUpgrades(File, List)} but keeps every upgrade of
+     * a dependency with a literal version; the original collapses all of them into the first one since their located
+     * property is {@code null}.
+     * https://github.com/jboss-set/maven-dependency-updater/issues/21
+     */
+    static List<ArtifactResult<ComponentUpgrade>> aggregate(File rootPom, List<ArtifactResult<ComponentUpgrade>> upgrades) throws Exception {
+        Set<LocatedProperty> modifiedProperties = new HashSet<>();
+        List<ArtifactResult<ComponentUpgrade>> aggregated = new ArrayList<>();
+        for (ArtifactResult<ComponentUpgrade> upgrade : upgrades) {
+            ComponentUpgrade any = upgrade.getAny().orElseThrow();
+            Optional<LocatedDependency> located = (any.getProject() != null)
+                    ? PomDependencyUpdater.locateDependency(any.getProject(), upgrade.getArtifactRef())
+                    : PomDependencyUpdater.locateDependency(rootPom, upgrade.getArtifactRef());
+            if (located.isPresent()) {
+                LocatedProperty property = located.get().getLocatedProperty();
+                if (property == null || modifiedProperties.add(property)) {
+                    aggregated.add(upgrade);
+                }
+            }
+        }
+        return aggregated;
     }
 
     static Upgrade toUpgrade(Optional<ComponentUpgrade> upgrade, List<Repository> repositories) {
