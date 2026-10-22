@@ -7,7 +7,7 @@
   {
     "name": "wildfly",
     "scm": "https://github.com/wildfly/wildfly.git",
-    "branch": "41.x"
+    "branch": "42.x"
   },
   {
     "name": "wildfly-core",
